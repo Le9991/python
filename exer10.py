@@ -1,14 +1,17 @@
-#Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius.
-#C = 5 * ((F-32) / 9).
+num1 = input('qualquer valor 1:')
+divisor = input('informe valor div: ')
 
+if num1.isalpha():
+    print('não é um numero')
 
-from os import system
-#para importar bibliotecas - from "n" import "y"  (n - para biblioteca, y - para ação/comandos da biblioteca)
-system('cls')
+if num1.isdecimal():
+        print('é um numero')
 
-
-tempC = input('Qual a temperatura de Cº?')
-tempF = tempC * 5
-print = (tempF)
-
+if int(divisor) > 0:
+    print('posso dividir')
+    divisão = int(num1) / int(divisor)
+    print(f'resultado da divisão é {divisão}')
+    
+else:
+    print('valor 0. Nao pode ser dividido')
 
